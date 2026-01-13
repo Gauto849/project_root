@@ -1,0 +1,110 @@
+* {
+    font-family: sans-serif;
+}
+.login-bg {
+    background: linear-gradient(135deg, #0f172a 0%, #064e3b 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Header Layout */
+.login-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+}
+
+.back-home-btn {
+    text-decoration: none;
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 30px;
+    backdrop-filter: blur(5px); /* Professional frosted glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.back-home-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(-5px);
+}
+
+.top-title {
+    color: white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Centering the Box */
+.login-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background: white;
+    padding: 40px;
+    border-radius: 24px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.login-box h2 {
+    color: #1e293b;
+    margin-bottom: 25px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    box-sizing: border-box; /* Important for padding */
+}
+
+/* Signup Link Styling */
+.signup-link {
+    font-size: 0.9rem;
+    color: #64748b;
+    margin: 5px 0 20px 0;
+}
+
+.signup-link a {
+    color: #059669; /* Green color to match gradient */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-submit {
+    width: 100%;
+    padding: 14px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-submit:hover {
+    background: #1d4ed8;
+    box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.3);
+}
+
+footer{
+    text-align: center;
+    color: white;
+}

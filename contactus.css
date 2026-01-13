@@ -1,0 +1,160 @@
+/* Contact Page Layout */
+.contact-container {
+    padding: 60px 5%;
+    background: linear-gradient(to bottom, #f8fafc, #e2e8f0);
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    
+}
+*{
+   font-family: 'Inter', sans-serif;;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0; /* Start with no width */
+    height: 2px;
+    background-color: #2563eb; /* Brand blue */
+    transition: width 0.3s ease; /* Smooth growing effect */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--dark-color);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav-links a:hover {
+    color: #2563eb;
+}
+
+.nav-links a:hover::after, 
+.nav-links a.active::after {
+    width: 100%; /* Line grows to full width */
+}
+
+
+
+.support-centers {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.centers-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.center-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+}
+
+/* Feedback Form Styling */
+.form-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+/* Validation & Interaction Design */
+.input-group input, 
+.input-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+    background: none;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Validation States (Requirement) */
+.input-group input:focus,
+.input-group input:valid {
+    border-color: #2563eb;
+}
+
+/* Floating Label Animation */
+.input-group label {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #94a3b8;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.input-group textarea ~ label {
+    top: 20px;
+}
+
+/* Label moves up when user clicks or types */
+.input-group input:focus ~ label,
+.input-group input:not(:placeholder-shown) ~ label,
+.input-group textarea:focus ~ label,
+.input-group textarea:not(:placeholder-shown) ~ label {
+    top: -12px;
+    left: 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #2563eb;
+    background: white;
+    padding: 0 5px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.submit-btn:hover {
+    background: #1d4ed8;
+    transform: scale(1.02);
+}
+
+
+footer {
+    color: white;
+    text-align: center;
+    background-color: black;
+}
